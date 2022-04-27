@@ -10,13 +10,13 @@
     :license: BSD, see LICENSE for more details.
 """
 
-__version__ = '0.12.5'
+__version__ = '0.12.6'
 
 # utilities we import from Werkzeug and Jinja2 that are unused
 # in the module but are exported as public interface.
 from werkzeug.exceptions import abort
 from werkzeug.utils import redirect
-from jinja2 import Markup, escape
+from markupsafe import Markup, escape
 
 from .app import Flask, Request, Response
 from .config import Config

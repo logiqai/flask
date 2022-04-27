@@ -1,6 +1,12 @@
 Flask Changelog
 ===============
 
+Version 0.12.6
+--------------
+
+Released on April 27 2022
+
+- Making it work with jinja2 3.1.x
 
 Version 0.12.5
 --------------

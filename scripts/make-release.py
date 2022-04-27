@@ -127,6 +127,8 @@ def main():
     if rv is None:
         fail('Could not parse changelog')
 
+    print(rv)
+
     version, release_date, codename = rv
     dev_version = bump_version(version) + '.dev'
 

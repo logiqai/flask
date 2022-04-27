@@ -283,9 +283,10 @@ class Flask(_PackageBoundObject):
     json_decoder = json.JSONDecoder
 
     #: Options that are passed directly to the Jinja2 environment.
-    jinja_options = ImmutableDict(
-        extensions=['jinja2.ext.autoescape', 'jinja2.ext.with_']
-    )
+    #jinja_options = ImmutableDict(
+    #    extensions=['jinja2.ext.autoescape', 'jinja2.ext.with_']
+    #)
+    jinja_options = ImmutableDict(extensions=list())
 
     #: Default configuration parameters.
     default_config = ImmutableDict({
